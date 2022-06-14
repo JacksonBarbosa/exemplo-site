@@ -1,0 +1,170 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: 0;
+}
+
+body {
+    background-color:#323238;
+    font-family:cursive ;
+}
+html,body{
+    height: 100%;
+    overflow-y: hidden;
+}
+
+.center{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1250px;
+    min-width: 320px;
+    margin: auto;
+    padding: 0 2%;
+}
+
+header{
+    height:200px;
+    padding:20px 0;
+}
+
+.logo{
+    width: 40%;
+}
+
+.menu{
+    padding-top: 30px;
+    width: 50%;
+    text-align: center;
+    background-color:#323238;
+}
+
+.menu a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+    float: left;
+}
+
+.menu :hover{
+    background-color:rgb(204, 51, 51);
+}
+
+section .sobre{
+    height: calc(100% - 200%);
+    position: relative;
+}
+
+.extras{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: auto;
+    width: 40%;
+    background-color:rgba(255, 0, 0, 0.247);
+    border-radius: 50%;
+
+}
+
+
+.social-media{
+    position: absolute;
+    left: 300px;
+    top:150px;
+    bottom:5px;
+}
+
+.social-media img{
+    display: block;
+    width: 20px;
+    margin: 5px;
+}
+
+.texto-sobre{
+    color: white;
+    display: block;
+    width: 500px;
+    
+}
+.texto-sobre h1{
+    font-size:40px;
+}
+
+.texto-sobre p{
+    margin: 0px;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    max-width: 800px;
+}
+
+.texto-sobre button{
+    border: 0px;
+    background-color:red;
+    color: white;
+    border-radius:8px;
+    width: 100px;
+    height: 30px;
+    cursor: pointer;
+    margin-top:20px;
+}
+@media screen and (max-width:991px){
+    header{
+        padding: 0px;
+    }
+.logo{
+    max-width:150px;
+    padding: 8px;
+}
+.menu a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+    float: left;
+    width: 70%;
+    height: 30px;
+    margin-left: 40px;
+}
+section{
+    padding: 100px;
+    
+}
+
+.texto-sobre{
+    flex-direction: column;
+    
+}
+
+.texto-sobre h1{
+    font: size 2.5em;
+}
+
+.texto-sobre .texto-sobre h1{
+    max-width:100%;
+    justify-content: center;
+}
+
+.extras{
+    position: absolute;
+    top: 60px;
+    left: 0;
+    margin: 50px;
+    width: 200px;
+    height: 0;
+    background-color:red;
+    clip-path: extras(px center bottom);
+}
+.texto-sobre .texto-sobre h1 img {
+    max-width: 300px;
+    padding:5px;
+}
+
+.social-media {
+    max-width: 30px;
+}
+.menu :hover {
+    background-color:rgb(110, 68, 68);
+}
+}
+
